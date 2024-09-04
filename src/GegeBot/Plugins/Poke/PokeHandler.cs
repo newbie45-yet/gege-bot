@@ -29,7 +29,7 @@ namespace GegeBot.Plugins.Poke
         {
             if (obj.target_id.ToString() != cqBot.BotID) return;
 
-            int action = new Random().Next(0, 2);
+            int action = new Random().Next(0, 3);
             var cqCode = new CQCode();
 
             if (action == 1)

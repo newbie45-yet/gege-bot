@@ -269,13 +269,6 @@ namespace GegeBot.Plugins.EdgeGPT
 
             if (genImages != null)
             {
-                Task.Delay(100 * new Random().Next(5, 10)).Wait();
-
-                cqCode.Clear();
-                cqCode.SetReply(obj.message_id);
-                cqCode.SetText("正在生成图片请稍等...");
-                cqBot.Message_QuickReply(obj, cqCode);
-
                 DownloadImages(edgeGptAPI, ref genImages);
 
                 cqCode.Clear();

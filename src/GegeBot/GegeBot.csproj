@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <Platforms>AnyCPU</Platforms>
-    <FileVersion>0.3.2</FileVersion>
+    <FileVersion>0.4.0</FileVersion>
     <Version>$(FileVersion)</Version>
     <AssemblyVersion>$(FileVersion)</AssemblyVersion>
     <Authors>owlcoocoo</Authors>

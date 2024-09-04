@@ -78,7 +78,7 @@
 	},
 	"EdgeGpt": {
 		// 是否启用
-		"Enable": true,
+		"Enable": false,
 		// 服务地址
 		"ServerAddress": "http://127.0.0.1:8989",
 		// 代理地址
@@ -86,15 +86,15 @@
 		// 生成图片的代理地址
 		"GenerateImageProxy": "http://127.0.0.1:1082",
 		// cookies 文件路径
-		"CookieFilePath": "bing_cookies.json",
+		"CookieFilePath": "bing/cookies.json",
 		// 生成图片所需的 cookie
 		"ImagesAuthCookie": "",
 		// 记录消息日志
 		"WriteMessageLog": true,
 		// 默认提示词文件路径，不填不做默认对话处理
-		"PromptFilePath": "prompt.txt",
+		"PromptFilePath": "bing/prompt.txt",
 		// 被禁言提示词文件路径，不填不发送给 GPT
-		"BannedPromptFilePath": "banned_prompt.txt",
+		"BannedPromptFilePath": "bing/banned_prompt.txt",
 		// 记忆重置命令
 		"ResetCommand": "重置会话",
 		// 重置后发送的消息，不填不发送
@@ -105,5 +105,29 @@
 		"DictFile": ["dict.json"],
 		// 自动回复概率 0.0 - 1.0
 		"ReplyProbability": 0.1,
+	},
+	"ChatGPT": {
+		// 是否启用
+		"Enable": true,
+		// 服务地址
+		"ServerAddress": "http://127.0.0.1:8000",
+		// cookies 文件路径
+		"CookieFilePath": "chatgpt/cookies.json",
+		// 记录消息日志
+		"WriteMessageLog": true,
+		// 默认提示词文件路径，不填不做默认对话处理
+		"PromptFilePath": "chatgpt/prompt.txt",
+		// 被禁言提示词文件路径，不填不发送给 GPT
+		"BannedPromptFilePath": "chatgpt/banned_prompt.txt",
+		// 记忆重置命令
+		"ResetCommand": "重置记忆",
+		// 重置后发送的消息，不填不发送
+		"ResetMessage": "记忆已重置。",
+		// 要过滤掉的文本，避免触发回复
+		"FilterText": ["--重载配置", "搜", "pv"],
+		// 字典文件集，用于自动回复
+		"DictFile": ["chatgpt/dict.json"],
+		// 自动回复概率 0.0 - 1.0
+		"ReplyProbability": 0.3,
 	}
 }
